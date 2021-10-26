@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Triangle</title>
+    <script>
+        function findArea() {
+            var side1 = parseInt(document
+            .getElementById("side1").value);
+            var side2 = parseInt(document
+            .getElementById("side2").value);
+            var side3 = parseInt(document
+            .getElementById("side3").value);
+            console.log(typeof(side1));
+            var s = (side1 + side2 + side3) / 2;
+            var area = Math.sqrt(s * ((s - side1) 
+            * (s - side2) * (s - side3)));
+            document.getElementById(
+            "display").innerHTML = findArea;
+        }
+    </script>
+</head>
+
+<body>
+    <form id="oblik" name="oblik">
+        <input id="side1" name="side1" type="text"><br>
+        <input id="side2" name="side2" type="text"><br>
+        <input id="side3" name="side3" type="text"><br>
+        <input type="submit" class="button" value="Find the Area" onClick="findArea()">
+        <p>
+            Area of Triangle: <var id="document.getElementById"></var>
+        </p>
+    </form>
+
+</body>
+
+</html>
